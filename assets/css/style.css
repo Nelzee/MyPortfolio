@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+a,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: white;
+}
+.landing-section {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(
+      to right top,
+      rgba(53, 10, 10, 0.8),
+      rgba(239, 16, 16, 0.2)
+    ),
+    url(/assets/images/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.banner-text {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.call-to-action {
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #000000;
+}
+
+.name h1 {
+  font-size: 3.5rem;
+  color: #ceeacf;
+  text-align: center;
+}
+.call-to-action div {
+  padding: 2rem;
+}
+
+.c-t-a-Buttons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.c-t-a-Button {
+  border: 2px solid #000000;
+  width: 15rem;
+  margin: 1rem;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 2rem;
+}
+.social-links {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+.social-links a img {
+  width: 1.5625rem;
+  color: white;
+  transition: 0.3s ease-in;
+}
+.social-links a img:hover {
+  transform: translateY(-10px);
+}
+nav {
+  position: absolute;
+  top: 92vh;
+  width: 100%;
+  background: #353333;
+}
+
+.fixed-nav nav {
+  position: fixed;
+  top: 0;
+}
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 4rem;
+}
+.links li {
+  position: relative;
+  display: inline-block;
+}
+.links li a {
+  padding: 1rem 20px;
+  font-size: 1.25rem;
+}
+.links li a::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: white;
+  visibility: hidden;
+}
+
+.links li a:hover::after {
+  visibility: visible;
+}
+.links li.hire-me {
+  max-width: 0;
+  overflow: hidden;
+  transition: 0.4s ease-in;
+}
+
+.fixed-nav .links li.hire-me {
+  max-width: 300px;
+  overflow: visible;
+}
+
+/* About Me */
+.about-me {
+  height: 100vh;
+}
+.summary {
+  padding: 30px;
+  margin: 0 auto;
+  height: 50px;
+  width: 33%;
+}
